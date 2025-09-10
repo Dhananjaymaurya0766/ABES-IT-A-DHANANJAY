@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Adi{
+            border: 5px solid #ad1212;
+            background: rgb(224, 181, 10);
+            font-size:30px;
+            font-weight:bold;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <script>    
+        function abes(){
+            document.getElementById("Adi").innerHTML = "hello";
+        }
+        abes();
+    </script>
+    <div id="Adi">
+        <button onclick="abes()">Click Me</button>
+    </div>
+    <button onclick="red()"></button>
+    <button onclick="blue()"></button>
+    <button onclick="green()"></button>
+    <script>
+        function red(){
+            document.getElementById("Adi").style.background="red";
+        }
+        function blue(){
+            document.getElementById("Adi").style.background="blue";
+        }
+        function green(){
+            document.getElementById("Adi").style.background="green";
+        }
+    </script>
+</body>
+</html>
