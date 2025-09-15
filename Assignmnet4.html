@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Hide & Change Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 500px;
+    }
+    .half {
+      flex: 1;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: 200px;
+      border-radius: 8px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="half">
+      <img id="img1" src="https://www.syfy.com/sites/syfy/files/styles/scale_1280/public/2019/08/mv5bmjiymtaynjc5of5bml5banbnxkftztcwnzu4otiwmw._v1_sy1000_cr0015001000_al_.jpg" alt="Image 1">
+    </div>
+    <div class="half">
+      <button onclick="hideImage()">Hide</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="half">
+      <img id="img2" src="https://upload.wikimedia.org/wikipedia/en/d/d9/Elizabeth_Olsen_as_Wanda_Maximoff.jpg" alt="Image 2">
+    </div>
+    <div class="half">
+      <button onclick="changeImage()">Change</button>
+    </div>
+  </div>
+
+  <script>
+    function hideImage() {
+      const img = document.getElementById("img1");
+      img.style.display = (img.style.display === "none") ? "block" : "none";
+    }
+    function changeImage() {
+      const img = document.getElementById("img2");
+      if (img.src.includes("Image+2")) {
+        img.src = "https://i.redd.it/my21qs0i616e1.jpeg";
+      } else {
+        img.src = "https://i.pinimg.com/736x/97/02/5b/97025baaabdd96a10c67c6176c261bd8.jpg";
+      }
+    }
+  </script>
+
+</body>
+</html>

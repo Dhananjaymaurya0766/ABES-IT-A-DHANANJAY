@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #COUNTER{
+            border: 5px solid #ad1212;
+            border-radius: 20px;
+            background: rgb(224, 181, 10);
+            font-size:30px;
+            font-weight:bold;
+            height: 300px;
+            width: 300px;
+            align-items: center;
+            text-align: center;
+            align-self: center;
+        }
+        .Click{
+            height: 50px;
+            width: 50px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 10px;
+            margin: 20px;
+            align-items: center;
+        }   
+        </style>
+</head>
+<body>
+    <div id="COUNTER"></div>
+    <div>
+        <button  class="Click" onclick ="decrement()">-</button>
+        <button class="Click" onclick="increment()">+</button>
+    </div>
+    <script>    
+        let count = 0;
+        document.getElementById("COUNTER").innerHTML = count;
+
+        function increment(){
+            count++;
+            document.getElementById("COUNTER").innerHTML = count;
+        }
+        function decrement(){
+            count--;
+            document.getElementById("COUNTER").innerHTML = count;
+        }
+    </script>
+    
+    
+</body>
+</html>
