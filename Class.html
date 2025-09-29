@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        <p id ="new"></p>
+        class Car{
+        constructor(name,year){
+            this.name=name;
+            this.year=year;
+        }
+    }   
+    const mycar1=new Car("ford",2024);
+    const mycar2=new Car("audi",2023);
+    const x = document.getElementById("new").innerHTML= mycar1.name;
+    console.log(x);
+    </script>
+    
+</body>
+</html>
