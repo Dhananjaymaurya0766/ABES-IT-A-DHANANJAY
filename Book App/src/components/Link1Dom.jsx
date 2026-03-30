@@ -7,8 +7,7 @@ function About(){
     return <h1>THIS IS MY ABOUT PAGE</h1>
 }
 
-function Link11dom() {
-
+function Link1Dom() {
   return (
     <div>
         <div>
@@ -25,4 +24,4 @@ function Link11dom() {
   )
 }
 
-export default Link1Dom
+export default Link1Dom;

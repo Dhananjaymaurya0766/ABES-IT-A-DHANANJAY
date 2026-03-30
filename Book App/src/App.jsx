@@ -19,9 +19,10 @@ function App() {
       <br/>
       <Book/>
       <br/>
-      <BrowserRouter>
-    <Link11dom/>
-    </BrowserRouter>
+      <Book/>
+      <br/>
+      <Link1Dom/>
+  
     </div>
   )
 }

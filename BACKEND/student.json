@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Adarsh Maurya",
+    "age": 21,
+    "course": "B.Tech",
+    "branch": "CSE",
+    "year": 3,
+    "email": "adarsh@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Rohit Sharma",
+    "age": 22,
+    "course": "B.Tech",
+    "branch": "IT",
+    "year": 4,
+    "email": "rohit@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Priya Singh",
+    "age": 20,
+    "course": "BCA",
+    "branch": "Computer Applications",
+    "year": 2,
+    "email": "priya@example.com"
+  }
+]
